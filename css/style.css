@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #FF7D00;
+    --secondary-color: #0B132B;
+    --accent1-color: #2B303A;
+    --accent2-color: #F2F7F2;
+
+    --heading-font: "Fjalla One", sans-serif;
+    --paragraph-font: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2, h3{
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+a:visited {
+    color: var(--secondary-color);
+}
+
+span {
+    color: var(--accent1-color);
+}
+
+.hero {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 10px;
+    padding: auto;
+}
+
+.saved {
+    display: block;
+}
+
+.teams-region {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    list-style: none;
+    row-gap: .5rem;
+}
+
+.teams-region li {
+    justify-items: center;
+}
+
+.teams-region a{
+    margin: 5px;
+    padding: .5rem;
+    display: block;
+    background-color: var(--primary-color);
+}
+
+.teams-region a:hover , .teams-region a:active {
+    box-shadow: 0 0 .2rem #000;
+    background-color: #fed6b1;
+}
+
+.teams-region img {
+    width: 20rem;
+    height: auto;
+}
